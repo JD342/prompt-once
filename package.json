@@ -1,0 +1,14 @@
+{
+  "name": "ask-once",
+  "version": "0.0.0",
+  "description": "Prompts user for a string value once, caches it in a file, returns that value for every subsequent invocation",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@git.nook.of.nicolaf.io:blossom/npm/ask-once.git"
+  },
+  "author": "JD342"
+}
