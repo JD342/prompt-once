@@ -27,7 +27,7 @@ class CachedValue extends EventEmitter {
                 this[$prompt].question(`${this[$name]}: `, res);
             }))
             .then(value => {
-                this[$prompt].close();
+                if (this[$prompt]) this[$prompt].close();
                 writeFile(this[$cacheFile], value)
                     .then(() => { this.emit('cache'); })
                     .catch(e => { this.emit('error', e); });
