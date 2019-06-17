@@ -53,7 +53,7 @@ class CachedValue extends EventEmitter {
  *                     the value retrieval, 'error' event notifies any error that occurs during retrieval or when
  *                     caching the value after its retrieval, 'cache' event notifies successful caching.
  */
-module.exports = function askOnce(cacheFile, valueName) {
+module.exports = function promptOnce(cacheFile, valueName) {
     const cachedValue = new CachedValue(cacheFile, valueName);
     cachedValue[$retrieve]();
     return cachedValue;
