@@ -1,6 +1,6 @@
 {
   "name": "prompt-once",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "MIT",
   "description": "Prompts user for a string value once, caches it in a file, returns that value for every subsequent invocation",
   "main": "index.js",
